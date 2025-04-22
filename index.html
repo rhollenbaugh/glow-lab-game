@@ -9,7 +9,15 @@
 </head>
 <body>
   <h1>Glow Lab: Volume Mix Master</h1>
-  <p>Welcome to your skincare lab! Measure carefully using milliliters (mL) to make perfect mixes!</p>
+  <div class="game-container">
+    <p>Mix 100 mL of product using the slider:</p>
+    <input type="range" min="0" max="200" value="0" class="slider" id="volumeSlider">
+    <p id="sliderValue">Current volume: 0 mL</p>
+    <button onclick="checkVolume()">Mix It!</button>
+    <div id="glowy">
+      <div id="bubble" class="hidden"></div>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
